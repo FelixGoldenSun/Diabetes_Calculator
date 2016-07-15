@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:background="#1f49ff01">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Large Text"
+            android:id="@+id/lblBeforeDate"
+            android:onClick="BeforeDateOnClick"
+            android:layout_alignParentTop="true" android:layout_toStartOf="@+id/lblTo"
+            android:layout_marginEnd="35dp"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Large Text"
+            android:id="@+id/lblAfterDate"
+            android:onClick="AfterDateOnClick"
+            android:layout_alignParentTop="true" android:layout_toEndOf="@+id/lblTo"
+            android:layout_marginStart="33dp"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="To"
+            android:id="@+id/lblTo" android:layout_alignBottom="@+id/lblBeforeDate"
+            android:layout_centerHorizontal="true"/>
+    <com.github.mikephil.charting.charts.LineChart
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/viewLineChart"
+            android:layout_below="@+id/lblBeforeDate" android:layout_alignParentStart="true"
+            android:layout_marginTop="43dp" android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"/>
+</RelativeLayout>

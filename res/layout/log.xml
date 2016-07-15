@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:id="@+id/RelativeLayout" android:background="#1f49ff01">
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_back"
+            android:id="@+id/btnBack"
+            android:onClick="switchToMain"
+            android:layout_alignParentBottom="true" android:layout_alignParentStart="true"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/label_date"
+            android:id="@+id/lblDate"
+            android:layout_marginTop="42dp" android:layout_alignParentTop="true" android:layout_alignParentStart="true"
+            android:layout_marginStart="35dp"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/label_time"
+            android:id="@+id/lblTime" android:layout_below="@+id/lblDate" android:layout_alignStart="@+id/lblDate"
+            android:layout_marginTop="23dp"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_save"
+            android:id="@+id/btnSave"
+            android:onClick="savedData"
+            android:foregroundTint="#857eff" android:layout_alignTop="@+id/btnClear"
+            android:layout_toEndOf="@+id/textViewTime"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/textViewDate"
+            android:onClick="dateOnClick"
+            android:layout_alignBottom="@+id/lblDate" android:layout_alignStart="@+id/textViewTime"
+            android:textSize="15dp"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/textViewTime"
+            android:layout_marginStart="34dp" android:onClick="timeOnClick" android:layout_alignBottom="@+id/lblTime"
+            android:layout_toEndOf="@+id/lblTime" android:textSize="15dp"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/editTextDate1"
+            android:layout_marginTop="35dp"
+            android:minLines="7"
+            android:maxLines="7" android:layout_below="@+id/textViewTime"
+            android:layout_alignStart="@+id/textViewTime"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:textAppearance="?android:attr/textAppearanceLarge" android:text="@string/label_notes" android:id="@+id/textView3"
+              android:layout_alignTop="@+id/editTextDate1" android:layout_alignStart="@+id/lblTime"/>
+    <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioGroupMeal" android:orientation="horizontal"
+            android:layout_below="@+id/editTextDate1" android:layout_alignParentEnd="true"
+            android:weightSum="1">
+        <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/radio_before_meal"
+                android:id="@+id/rbBeforeMeal" android:checked="true" android:onClick="radioButtonClicked"
+                android:layout_weight="0.24"/>
+        <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/radio_after_meal"
+                android:id="@+id/rbAfterMeal" android:checked="false" android:onClick="radioButtonClicked"
+                android:layout_weight="0.41"/>
+        <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/radio_other"
+                android:id="@+id/rbOther" android:checked="false" android:onClick="radioButtonClicked"
+                android:layout_weight="0.42"/>
+    </RadioGroup>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editEAG" android:layout_gravity="center_vertical" android:layout_weight="19.44"
+            android:layout_alignBottom="@+id/lblA1C" android:layout_alignStart="@+id/editTextDate1"
+            android:layout_alignEnd="@+id/editTextDate1" android:text="eAG Output" android:inputType="number"
+            android:numeric="integer"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/label_log_eAG"
+            android:id="@+id/lblA1C"
+            android:layout_gravity="bottom"
+            android:layout_below="@+id/radioGroupMeal" android:layout_alignStart="@+id/textView3"
+            android:layout_marginTop="64dp"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_clear_file"
+            android:id="@+id/btnClear" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true"
+            android:onClick="deleteData" android:layout_toEndOf="@+id/btnSave"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send log to doctor"
+            android:id="@+id/buttonEmailDoctor" android:layout_above="@+id/btnSave" android:layout_toEndOf="@+id/btnSave"
+            android:onClick="onclickEmailLogToDoctor"/>
+</RelativeLayout>

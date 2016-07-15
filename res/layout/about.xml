@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:id="@+id/RelativeLayout">
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact Us"
+            android:id="@+id/buttonContact"
+            android:layout_marginTop="53dp"
+            android:layout_below="@+id/buttonAbout" android:layout_alignEnd="@+id/buttonAbout"
+            android:layout_gravity="center_vertical" android:onClick="onclickWeb"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  About Us   "
+            android:id="@+id/buttonAbout"
+            android:layout_gravity="center_vertical" android:onClick="onclickWeb" android:layout_below="@+id/textView16"
+            android:layout_centerHorizontal="true" android:layout_marginTop="89dp"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="About Page"
+            android:id="@+id/textView15"
+            android:layout_alignParentTop="true" android:layout_alignEnd="@+id/buttonAbout"
+            android:layout_marginTop="43dp"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Hello, Info about us. You can check out more info by clicking the first button. If you&apos;re feeling adventurous, fell free to contact us by clicking the SECOND button. "
+            android:id="@+id/textView16" android:layout_below="@+id/textView15" android:layout_centerHorizontal="true"
+            android:layout_marginTop="49dp" android:padding="50px"/>
+</RelativeLayout>

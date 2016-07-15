@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:weightSum="1" android:background="#1f49ff01">
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_eAG"
+            android:id="@+id/textView" android:layout_alignParentLeft="true" android:layout_marginLeft="0dp"
+            android:layout_alignParentTop="true" android:layout_marginTop="0dp"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/editTextGlucose" android:numeric="integer"
+            android:layout_marginLeft="0dp" android:layout_below="@+id/textView" android:layout_alignParentEnd="true"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_A1C"
+            android:id="@+id/textView2" android:layout_marginLeft="0dp"
+            android:layout_below="@+id/editTextGlucose" android:layout_alignParentStart="true"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/editTextA1C" android:numeric="decimal"
+            android:layout_marginLeft="0dp"
+            android:layout_below="@+id/textView2" android:layout_alignParentStart="true"/>
+    <RadioGroup
+            android:layout_width="335dp"
+            android:layout_height="wrap_content" android:layout_gravity="center_horizontal"
+            android:id="@+id/radioGroupFormulas" android:clickable="false"
+            android:layout_marginLeft="49dp" android:layout_marginTop="24dp" android:layout_below="@+id/editTextA1C"
+            android:layout_centerHorizontal="true">
+        <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/radio_ADAG"
+                android:id="@+id/radioButtonADAG" android:layout_gravity="center_horizontal" android:checked="true"
+                android:onClick="radioButtonClicked"/>
+        <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/radio_DCCT"
+                android:id="@+id/radioButtonDCCT" android:layout_gravity="center_horizontal"
+                android:onClick="radioButtonClicked" android:checked="false"/>
+    </RadioGroup>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_calculate"
+            android:id="@+id/button" android:layout_gravity="center_horizontal" android:onClick="calculate"
+            android:layout_marginLeft="282dp"
+            android:layout_centerVertical="true" android:layout_centerHorizontal="true"/>
+    <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/to_log"
+            android:id="@+id/btnSwitchToLog" android:layout_gravity="center_horizontal" android:onClick="switchToLog"
+            android:layout_marginLeft="0dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignTop="@+id/button2" android:layout_toStartOf="@+id/button2"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/to_chart"
+            android:id="@+id/button2"
+            android:onClick="switchToChart"
+            android:layout_alignParentBottom="true" android:layout_alignParentEnd="true"/>
+</RelativeLayout>
+

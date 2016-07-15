@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Calculadora de la diabetes</string>
+    <string name="bad_input">mala entrada</string>
+    <string name="button_calculate">Calcular</string>
+    <string name="to_log">Entra</string>
+    <string name="to_chart">para crear un gráfico</string>
+    <string name="radio_ADAG">Fórmula ADAC</string>
+    <string name="radio_DCCT">Fórmula DCCT</string>
+    <string name="label_A1C">El marcador A1C</string>
+    <string name="label_eAG">La glucosa media (eAG)</string>
+    <string name="label_date">Fecha</string>
+    <string name="label_time">Hora</string>
+    <string name="label_notes">Notas</string>
+    <string name="radio_before_meal">Antes de la comida</string>
+    <string name="radio_after_meal">Después de comer</string>
+    <string name="radio_other">Otro</string>
+    <string name="label_log_eAG">eAG</string>
+    <string name="button_back">Volver a calcular</string>
+    <string name="button_save">Salvar</string>
+    <string name="button_clear_file">Archivo vacio</string>
+    <string name="label_alarm_one">Alarma 1</string>
+    <string name="switch_active">Activo</string>
+    <string name="switch_recurring">Periódico</string>
+    <string name="chart_description">Un montón de cosas</string>
+    <string name="chart_eAG">eAG</string>
+    <string name="save_toast_it">El éxito de guardar</string>
+    <string name="save_error">Error</string>
+    <string name="delete_toast_success">Borrado de registro</string>
+    <string name="delete_toast_no_file">El registro está vacía</string>
+    <string name="chart_no_data">No hay datos de registro disponibles.</string>
+    <string name="alarm_active">Alarma 1 activa</string>
+    <string name="alarm_inactive">Alarma 1 fuera</string>
+    <string name="notification_alarm_one">Alarma Medicina</string>
+    <string name="notification_notes_one">Notas Medicina</string>
+    <string name="alarm_message_one">Mensaje de alarma aquí</string>
+</resources>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/editTextDoctorEmail"
+            android:hint="Doctor Email" android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/buttonSave"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="E-Mail"
+            android:id="@+id/textView14"
+            android:layout_alignBottom="@+id/editTextDoctorEmail" android:layout_alignParentStart="true"
+            android:layout_marginStart="33dp"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:id="@+id/buttonSave"
+            android:nestedScrollingEnabled="false" android:onClick="onclickSavePreferences"
+            android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+    <RadioGroup android:layout_width="335dp" android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal" android:id="@+id/radioGroupPrefFormulas"
+                android:clickable="false" android:layout_marginLeft="49dp" android:layout_marginTop="44dp"
+                android:layout_below="@+id/editTextDoctorEmail" android:layout_alignEnd="@+id/editTextDoctorEmail">
+        <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content"
+                     android:text="@string/radio_ADAG" android:id="@+id/radioButtonPrefADAG"
+                     android:layout_gravity="center_horizontal" android:checked="true"
+                     android:onClick="radioButtonClicked"/>
+        <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content"
+                     android:text="@string/radio_DCCT" android:id="@+id/radioButtonPrefDCCT"
+                     android:layout_gravity="center_horizontal" android:onClick="radioButtonClicked"
+                     android:checked="false"/>
+    </RadioGroup>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Default Algorithm "
+            android:id="@+id/textView17"
+            android:layout_alignTop="@+id/radioGroupPrefFormulas" android:layout_toStartOf="@+id/editTextDoctorEmail"
+            android:paddingLeft="100px"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Before Date"
+            android:id="@+id/textView18"
+            android:layout_marginBottom="46dp"
+            android:layout_above="@+id/editTextPrefAfterDate" android:layout_alignParentStart="true"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="After Date"
+            android:id="@+id/textView19"
+            android:layout_alignBottom="@+id/editTextPrefAfterDate" android:layout_alignEnd="@+id/textView18"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:ems="10"
+            android:id="@+id/editTextPrefBeforeDate" android:layout_alignTop="@+id/textView18"
+            android:layout_alignEnd="@+id/radioGroupPrefFormulas" android:onClick="BeforePrefDateOnClick"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:ems="10"
+            android:id="@+id/editTextPrefAfterDate" android:layout_centerVertical="true" android:layout_alignStart="@+id/editTextPrefBeforeDate"
+            android:onClick="AfterPrefDateOnClick"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Subject"
+            android:id="@+id/textView20" android:layout_below="@+id/textView19"
+            android:layout_alignEnd="@+id/textView19" android:layout_marginTop="38dp"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextSubject"
+            android:layout_alignTop="@+id/textView20" android:layout_alignEnd="@+id/editTextPrefAfterDate"
+            android:layout_alignStart="@+id/editTextPrefAfterDate"/>
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:layout_below="@+id/editTextSubject"
+            android:layout_centerHorizontal="true">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Note to Dr."
+                android:id="@+id/textView21"
+                android:padding="50px" android:layout_centerVertical="true" android:layout_alignParentStart="true"/>
+        <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/editTextDrNotes"
+                android:layout_centerVertical="true" android:layout_alignParentEnd="true"
+                android:layout_toEndOf="@+id/textView21"/>
+    </RelativeLayout>
+</RelativeLayout>

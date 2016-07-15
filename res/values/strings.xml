@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Diabetes Calculator</string>
+    <string name="bad_input">Bad Input</string>
+    <string name="button_calculate">Calculate</string>
+    <string name="to_log">To Log</string>
+    <string name="to_chart">To Chart</string>
+    <string name="radio_ADAG">ADAG Formula</string>
+    <string name="radio_DCCT">DCCT Formula</string>
+    <string name="label_A1C">A1C score</string>
+    <string name="label_eAG">Average Glucose (eAG)</string>
+    <string name="label_date">Date</string>
+    <string name="label_time">Time</string>
+    <string name="label_notes">Notes</string>
+    <string name="radio_before_meal">Before Meal</string>
+    <string name="radio_after_meal">After Meal</string>
+    <string name="radio_other">Other</string>
+    <string name="label_log_eAG">eAG</string>
+    <string name="button_back">Back to Calculate</string>
+    <string name="button_save">Save</string>
+    <string name="button_clear_file">Clear File</string>
+    <string name="label_alarm_one">Alarm One</string>
+    <string name="switch_active">Active</string>
+    <string name="switch_recurring">Recurring</string>
+    <string name="chart_description">Lots of stuff</string>
+    <string name="chart_eAG">eAG</string>
+    <string name="save_toast_it">Save Successful</string>
+    <string name="save_error">Error</string>
+    <string name="delete_toast_success">Log Cleared</string>
+    <string name="delete_toast_no_file">The log is empty</string>
+    <string name="chart_no_data">No log data available.</string>
+    <string name="alarm_active">Alarm One active</string>
+    <string name="alarm_inactive">Alarm One off</string>
+    <string name="notification_alarm_one">Medicine Alarm</string>
+    <string name="notification_notes_one">Medicine Notes</string>
+    <string name="alarm_message_one">Alarm Message here</string>
+    <string name="label_alarm_two">Alarm Two</string>
+    <string name="label_alarm_three">Alarm Three</string>
+</resources>
