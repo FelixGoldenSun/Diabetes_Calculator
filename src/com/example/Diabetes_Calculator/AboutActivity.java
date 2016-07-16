@@ -25,10 +25,10 @@ public class AboutActivity extends BaseActivity  {
         String url;
 
         if(currentButton.getText().toString().equals("  About Us   ")){
-            url = "http://www.dbcalc.chesthighwalls.com/aboutus.php"; //about
+            url = "http://www.dbcalc.benawalls.com/aboutus.php"; //about
 
         }else{
-            url = "http://www.dbcalc.chesthighwalls.com/contactus.php"; //contact us
+            url = "http://www.dbcalc.benawalls.com/contactus.php"; //contact us
 
 
         }
